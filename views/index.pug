@@ -1,0 +1,11 @@
+extends layout
+block content
+  h1= title
+  p Welcome to #{title}
+
+  each val in messages
+    ul
+    each field in val
+      li= field
+  h4= 'Write a new message!'
+  a(href="/new") *Post here*

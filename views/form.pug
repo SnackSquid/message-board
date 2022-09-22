@@ -1,0 +1,13 @@
+extends layout
+block content
+  h1= title
+
+  h3='Enter your message here'
+  form(action='/new', method='POST')
+    label='User Name'
+    input.user(type="text" name='userName')
+    label='Message'
+    textarea.message(name='message')
+    button.submit(type='submit' value='Submit') Submit
+
+
